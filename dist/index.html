@@ -8,14 +8,14 @@
 
 <body>
     <form>
-        <label for="tytul">Tytuł książki:</label><br />
-        <input type="text" id="tytul"><br />
+        <label for="title ">Tytuł książki:</label><br />
+        <input type="text" id="title"><br />
         <br />
         <label for="autor"> Autor książki:</label> <br />
         <input type="text" id="autor"><br />
-        <label for="kategoria">Wybór kategorii:</label>
+        <label for="category">Wybór kategorii:</label>
         <br>
-        <select id="kategoria">
+        <select id="category">
             <option value="kryminał">kryminał</option>
             <option value="sci-fi">sci-fi</option>
             <option value="fantasy">fantasy</option>
@@ -24,10 +24,13 @@
             <option value="nauki ścisłe">nauki ścisłe</option>
         </select>
         <br>
+         <label for="newCategory"> Nowa kategoria:</label> <br />
+        <input type="text" id="newCategory"><br />
+         <input type="button" value="Dodaj kategorię"  onclick="addCategory();">
         <br>
-        <label for="priorytet">Priorytet:</label>
+        <label for="priority ">Priorytet:</label>
         <br>
-        <select id="priorytet">
+        <select id="priority ">
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -36,7 +39,7 @@
         </select>
         <br>
         <br>
-        <input type="button" value="send" id="send" onclick="dodaj();">
+        <input type="button" value="Dodaj książkę"  onclick="addRow();">
     </form>
     <style>
         td,
@@ -44,7 +47,7 @@
             border: 1px solid black;
         }
     </style>
-    <table id="bibliotekaksiazek">
+    <table id="library">
         <tr>
             <th>Autor</th>
             <th>Tytul</th>
