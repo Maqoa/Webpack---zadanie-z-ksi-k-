@@ -6,8 +6,17 @@ function dodaj() {
     var kategoria = document.getElementById("kategoria").value;
     var priorytet = document.getElementById("priorytet").value;
 
+
     var nowywiersz = document.createElement("tr");
-    nowywiersz.innerHTML = "<td>" + tytul + "</td><td>" + autor + "</td><td>" + kategoria + "</td><td>" + priorytet + "</td>";
+
+    function addButton() {
+        var btn = document.createElement("BUTTON");
+        btn.innerHTML = "usun";
+        dodanie.appendChild(btn);
+            }
+    nowywiersz.innerHTML = "<td>" + tytul + "</td><td>" + autor + "</td><td>" + kategoria + "</td><td>" + priorytet + "</td>" + "<td>" + addButton + "</td>";
     var dodanie = document.getElementById('bibliotekaksiazek');
     dodanie.appendChild(nowywiersz);
+
 }
+
