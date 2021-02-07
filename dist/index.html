@@ -72,7 +72,8 @@
     </table>
 
     <script type="text/javascript">
-        var przycisk = document.getElementById('send');
+        var przyciskDodaj = document.getElementById('send');
+        var przyciskUsun = document.getElementById('send');
         var counter = 0;
         send.addEventListener('click', pierwszaFunkcja);
  function pierwszaFunkcja(){
@@ -81,11 +82,10 @@
     content += result + ', ';
     counter++;
      container.textContent = counter;
- console.log(counter);
- };
+  };
         
      </script>
-     <div><div>Liczba książek:</div><div id="container"></div></div>
+     <div>Liczba książek:</div><div id="container"></div>
 
     <script src="../src/index.js"></script>
 </body>

@@ -9,13 +9,8 @@ function dodaj() {
 
     var nowywiersz = document.createElement("tr");
 
-    function addButton() {
-        var btn = document.createElement("BUTTON");
-        btn.innerHTML = "usun";
-        dodanie.appendChild(btn);
-        return addButton;
-            }
-    nowywiersz.innerHTML = "<td>" + tytul + "</td><td>" + autor + "</td><td>" + kategoria + "</td><td>" + priorytet + "</td>" + "<td>" + "<button>"  + "</td>";
+    
+    nowywiersz.innerHTML = "<td>" + tytul + "</td><td>" + autor + "</td><td>" + kategoria + "</td><td>" + priorytet + "</td>" + "<td>" + "<button>" + "</td>";
     var dodanie = document.getElementById('bibliotekaksiazek');
     dodanie.appendChild(nowywiersz);
 
