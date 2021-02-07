@@ -51,20 +51,41 @@
         <br>
 
 
-        <input type="button" value = " send " id="send" onclick="dodaj();">
+        <input type="button" value=" send " id="send" onclick="dodaj();">
     </form>
-    
-<style> td, th { border: 1px solid black; } </style>
-<table id="bibliotekaksiazek">
-  <tr>
-    <th>Autor</th>
-    <th>Tytul</th>
-    <th>kategoria</th>
-    <th>priorytet</th>
-    </tr>
+
+    <style>
+        td,
+        th {
+            border: 1px solid black;
+        }
+    </style>
+    <table id="bibliotekaksiazek">
+        <tr>
+            <th>Autor</th>
+            <th>Tytul</th>
+            <th>kategoria</th>
+            <th>priorytet</th>
+            <th>usuń</th>
+        </tr>
 
     </table>
-    
+
+    <script type="text/javascript">
+        var przycisk = document.getElementById('send');
+        var counter = 0;
+        send.addEventListener('click', pierwszaFunkcja);
+ function pierwszaFunkcja(){
+    var content = '';
+       var result =  + 1;
+    content += result + ', ';
+    counter++;
+     container.textContent = counter;
+ console.log(counter);
+ };
+        
+     </script>
+     <div><div>Liczba książek:</div><div id="container"></div></div>
 
     <script src="../src/index.js"></script>
 </body>
